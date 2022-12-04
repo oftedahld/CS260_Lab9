@@ -44,6 +44,9 @@ def main():
     print(" expected A B C D E F G H I J " )
     print(" actually " + graph.listNodes(), end = "\n\n")
 
+    print("The graph edge list is:")
+    print(graph.displayEdges(), end="\n\n")
+
     print("The adjacency list is:")
     print(graph.displayAdjacency(), end="\n")
     
@@ -67,7 +70,7 @@ def main():
     print(" Expected D: D-C C-I C-F F-G G-H C-B B-A D-E Unreached J")
     print(" Actually " + graph.minCostTree('D'), end="\n")
     
-    #uncomment the following lines to test minCostPath
+    # #uncomment the following lines to test minCostPath
     print("The minimum cost paths starting at A ")
     print(" Expected B(4) C(12) D(19) E(21) F(11) G(9) H(8) I(14) J(inf) ")
     print(" Actually " + graph.minCostPaths('A'), end="\n")
